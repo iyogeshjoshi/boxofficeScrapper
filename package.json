@@ -1,0 +1,17 @@
+{
+  "name": "boxoffice",
+  "version": "1.0.0",
+  "description": "To fetch all movie data from boxoffice site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yogi <iyogeshjoshi@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "csv-stringify": "^1.0.4",
+    "electron-microscope": "file:electron-microscope",
+    "electron-prebuilt": "^0.36.7",
+    "osmosis": "^1.1.2"
+  }
+}
