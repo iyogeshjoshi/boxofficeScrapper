@@ -44,7 +44,6 @@ osmosis
   .follow('@href')
   .set({
     Title: '.movieboxsright div.blue_tlte > a',
-    releaseDetails: '.movieboxsright .movieboxssec:nth-child(2)',
     screens: '.movieboxsright .movieboxssec:nth-child(4) .movieim6:nth-child(1) tr:nth-child(1) > td:nth-child(3)',
     firstDay: '.movieboxsright .movieboxssec:nth-child(4) .movieim6:nth-child(1) tr:nth-child(2) > td:nth-child(3)',
     openingNote: '.movieboxsright .movieboxssec:nth-child(4) .movieim6:nth-child(2) tr:nth-child(1) > td:nth-child(3)',
@@ -57,12 +56,13 @@ osmosis
     overseasGross: '.movieboxsright > .movieboxssec:nth-child(7) td:nth-child(1) tr:nth-child(4) td:nth-child(3)',
     worldwideGross: '.movieboxsright > .movieboxssec:nth-child(7) td:nth-child(1) tr:nth-child(5) td:nth-child(3)',
     allTimeRank: '.movieboxsright > .movieboxssec:nth-child(7) td:nth-child(2) tr:nth-child(1) td:nth-child(4)',
-    footfalls: '.movieboxsright > .movieboxssec:nth-child(7) td:nth-child(1) tr:nth-child(2) td:nth-child(4)',
-    adjustedNetGross: '.movieboxsright > .movieboxssec:nth-child(7) td:nth-child(1) tr:nth-child(3) td:nth-child(4)',
+    footfalls: '.movieboxsright > .movieboxssec:nth-child(7) td:nth-child(2) tr:nth-child(2) td:nth-child(4)',
+    adjustedNetGross: '.movieboxsright > .movieboxssec:nth-child(7) td:nth-child(2) tr:nth-child(3) td:nth-child(4)',
     overseasFirstWeekend: '.movieboxsleftouter > .movieboxssec:nth-child(1) table:nth-child(2) tr:nth-child(2) td:nth-child(1)',
     worldWideFirstWeekend: '.movieboxsleftouter > .movieboxssec:nth-child(1) table:nth-child(2) tr:nth-child(2) td:nth-child(2)',
     overseasFirstWeek: '.movieboxsleftouter > .movieboxssec:nth-child(1) table:nth-child(2) tr:nth-child(2) td:nth-child(3)',
-    worldwideFirstWeek: '.movieboxsleftouter > .movieboxssec:nth-child(1) table:nth-child(2) tr:nth-child(2) td:nth-child(4)'
+    worldwideFirstWeek: '.movieboxsleftouter > .movieboxssec:nth-child(1) table:nth-child(2) tr:nth-child(2) td:nth-child(4)',
+    releaseDetails: '.movieboxsright .movieboxssec:nth-child(2)',
   })
   .data(function (movie) {
     var releaseDetails = movie.releaseDetails.replace(/\n/g, '').split('|')
